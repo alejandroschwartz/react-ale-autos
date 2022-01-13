@@ -1,0 +1,17 @@
+@use './vars';
+
+.my-order-content {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 320px;
+}
+
+.order {
+  padding: 12px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  background-color: var(--very-ligth-pink);
+}

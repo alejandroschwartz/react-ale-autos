@@ -1,0 +1,40 @@
+@use './vars';
+
+.ProductList__input--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+}
+.ProductList__input {
+  margin-top: 100px;
+  min-width: 300px;
+  width: 50%;
+  padding: 8px 18px;
+  border: 1px solid #bbbbbb;
+  border-bottom: 2px solid #bbbbbb;
+  border-radius: 6px;
+}
+
+.ProductList__container {
+  padding-top: 28px;
+  background-color: var(--background);
+}
+
+.ProductList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 240px);
+  gap: 26px;
+  place-content: center;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  max-width: 1080px;
+}
+
+@media (max-width: 640px) {
+  .ProductList {
+    grid-template-columns: repeat(auto-fill, 140px);
+    gap: 16px;
+  }
+}

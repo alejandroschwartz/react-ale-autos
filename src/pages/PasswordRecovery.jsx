@@ -1,16 +1,20 @@
 import React from 'react'
+import '../styles/PasswordRecovery.scss'
 
-export default function RecoveryPassword() {
+import logoYardSale from '@logos/logo_yard_sale.svg'
+import logoEmail from '@icons/email.svg'
+
+export default function PasswordRecovery() {
   return (
     <div className="login">
-      <div className="color-yellow">
-      </div>
+      {/* <div className="color-yellow">
+      </div> */}
       <div className="form-container">
-        <img className="logo" src="./logos/logo_yard_sale.svg" alt="logo" />
+        <img className="logo" src={logoYardSale} alt="logo" />
         <h1 className="title">El email ha sido enviado!</h1>
         <p className="subtitle">Revisá tu bandeja de entrada para instrucciones sobre como resetear tu contraseña.</p>
         <div className="email-image">
-          <img src="./icons/email.svg" alt="email" />
+          <img src={logoEmail} alt="email" />
         </div>
         <button className="primary-button login-button">
           Registrate
