@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from '../containers/Layout';
 import Login from '../pages/Login';
 import Home from '../pages/Home';
+import Product from '../pages/Product';
 import NotFound from '../pages/NotFound';
 import PasswordRecovery from '../pages/PasswordRecovery';
 import PasswordCreate from '../pages/PasswordCreate';
@@ -22,6 +23,7 @@ export default function App() {
         <Layout>
           <Routes>
             <Route path="/" element={ <Home/> } />  
+            <Route path="/product/:id" element={ <Product/> } />  
             <Route path="/login" element={ <Login/> } />
             <Route path="/recovery-password" element={ <PasswordRecovery/> } />
             <Route path="/create-password" element={ <PasswordCreate/> } />

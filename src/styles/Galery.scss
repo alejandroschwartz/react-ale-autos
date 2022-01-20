@@ -1,0 +1,47 @@
+@use "./_vars.scss";
+
+.Galery {
+  width: 100%;
+  padding: 12px 12px;
+  // min-height: 100vh;
+  // background-color: #bbb;
+  display: flex;
+}
+
+img {
+  display: block;
+  cursor: pointer;
+}
+ 
+.Galery__container {
+  margin: auto;
+  width: 100%;
+  max-width: 540px;
+}
+
+.Galery__selected {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border: 3px solid #3483fa;
+  object-fit: cover;
+}
+
+.Galery__images {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 24px 0 0 0;
+}
+
+.Galery__images > img {
+  width: 80px;
+  height: 80px;
+  margin: 0px 6px;
+  object-fit: cover;
+}
+
+.Galery__images--selected {
+  border: 3px solid #3483fa;
+}

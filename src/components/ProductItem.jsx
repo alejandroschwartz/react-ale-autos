@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import { NavLink } from 'react-router-dom';
 import '../styles/ProductItem.scss'
 
 import AppContext from '../context/AppContext';
@@ -12,11 +13,13 @@ export default function ProductItem({ product }) {
 
   return (
     <div className="product-card">
-      <img
-        className="product-img"
-        src={product.images[0]}
-        alt={product.title}
-      />
+      <NavLink to={`/product/${product.id}`} >
+        <img
+          className="product-img"
+          src={product.images[0]}
+          alt={product.title}
+        />
+      </NavLink>
       <div className="product-info">
         <div>
           <p>$ {product.price}</p>

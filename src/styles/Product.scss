@@ -1,0 +1,98 @@
+@use "./_vars.scss";
+
+.View__content {
+    padding: 80px 0px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: var(--very-ligth-pink);
+}
+
+.View {
+    padding: 12px;
+    width: 80%;
+    min-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-gap: 12px;
+    align-items: center;
+    background-color: #fff;
+}
+.View__container:nth-of-type(1) {
+    grid-column: 1 / 2;
+}
+.View__container:nth-of-type(2) {
+    grid-column: 2 / 3;
+}
+.View__container:nth-of-type(3) {
+    grid-column: 1 / 3;
+}
+
+.View__container {
+    height: 100%;
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.View__button {
+    width: 140px;
+    margin: 10px;
+    padding: 12px;
+    border: 0;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.consult {
+    margin: 12px;
+    background-color: #3483fa;
+    color: #fff;
+}
+.View__container > div > h1 {
+    padding: 8px;
+}
+
+.View__container > h1,
+.View__container > h2 {
+    padding: 4px;
+}
+
+.View__container > p {
+    max-width: 600px;
+}
+
+
+@media screen and (max-width:769px) {
+
+    .View__content {
+        padding: 24px 0px;
+    }
+
+    .View {
+        padding: 2px;
+        width: 100%;
+        min-width: 280px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+    }
+    .View__container:nth-of-type(1) {
+        grid-column: 1 / 3;
+    }
+    .View__container:nth-of-type(2) {
+        grid-column: 1 / 3;
+    }
+    .View__container:nth-of-type(3) {
+        grid-column: 1 / 3;
+    }
+    .View__container {
+        border: 0px solid #e4e4e4;
+        border-radius: 0px;
+        border-bottom: 1px solid #e4e4e4;
+        padding-bottom: 8px;
+    }
+}

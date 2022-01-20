@@ -6,8 +6,8 @@ import logoYardSale from '@logos/logo_yard_sale.svg'
 export default function PasswordCreate() {
   return (
     <div className="login">
-      <div className="color-yellow">
-      </div>
+      {/* <div className="color-yellow">
+      </div> */}
       <div className="form-container">
         <img className="logo" src={logoYardSale} alt="logo" />
         <h1 className="title">Crear nueva contraseña</h1>
